@@ -1,0 +1,17 @@
+<div className="row mb-sm-3">
+  <div *ngFor="let widget of widgets"
+       class="mb-5 card p-1">
+
+    <div> {{widget.type}}</div>
+    <div className="form-group row ml-sm-2 col-sm-12"> {{widget.text}}</div>
+    <div className="form-group row ml-sm-2 col-sm-12">{{widget.items}}</div>
+
+  <div className="widget row ml-sm-2 col-sm-12"> <a href="{{widget.href}}">{{widget.title}}</a>
+  </div>
+
+    <div class="widget row ml-sm-2 col-sm-12">
+      <img class="img" height="150" src="{{widget.src}}" width="300" alt="" onerror="this.style.display='none'"/>
+    </div>
+  </div>
+
+</div>
