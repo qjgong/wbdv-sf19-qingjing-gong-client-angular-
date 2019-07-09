@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d540236-b765-431c-b37d-8b00450bfdf0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/wbdv-sf19-qingjing-gong-client-angular.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wbdv-sf19-qingjing-gong-client-angular.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-client/src/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-client/src/app/app.routing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-client/src/app/lesson-tabs/lesson-tabs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-client/src/app/lesson-tabs/lesson-tabs.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-client/src/app/topic-pills/topic-pills.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-client/src/app/topic-pills/topic-pills.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-client/src/app/widget-list/widget-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-client/src/app/widget-list/widget-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-client/src/app/widget-list/widget-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-client/src/app/widget-list/widget-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/CourseGrid/CourseGrid.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/CourseGrid/CourseGrid.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,21 +15,53 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/angular-client/src/app/app.routing.ts">
+        <entry file="file://$PROJECT_DIR$/src/app/CourseGrid/CourseGrid.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/CourseServiceClient.ts">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/LessonServiceClient.ts">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/CourseGrid/CourseGrid.component.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/CourseGrid/CourseGrid.component.spec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#73#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-client/src/app/topic-pills/topic-pills.component.ts">
+        <entry file="file://$PROJECT_DIR$/src/app/CourseGrid/CourseGrid.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <folding>
@@ -52,10 +80,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/angular-client/src/app/app.routing.ts" />
+        <option value="$PROJECT_DIR$/angular.json" />
+        <option value="$PROJECT_DIR$/src/app/CourseGrid/CourseGrid.component.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="822" />
@@ -65,63 +95,41 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="wbdv-sf19-qingjing-gong-client-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wbdv-sf19-qingjing-gong-client-angular" type="462c0819:PsiDirectoryNode" />
+              <item name="wbdv-sf19-qingjing-gong-client-angular2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wbdv-sf19-qingjing-gong-client-angular2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wbdv-sf19-qingjing-gong-client-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wbdv-sf19-qingjing-gong-client-angular" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wbdv-sf19-qingjing-gong-client-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wbdv-sf19-qingjing-gong-client-angular" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-client" type="462c0819:PsiDirectoryNode" />
+              <item name="wbdv-sf19-qingjing-gong-client-angular2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wbdv-sf19-qingjing-gong-client-angular2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wbdv-sf19-qingjing-gong-client-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wbdv-sf19-qingjing-gong-client-angular" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-client" type="462c0819:PsiDirectoryNode" />
+              <item name="wbdv-sf19-qingjing-gong-client-angular2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wbdv-sf19-qingjing-gong-client-angular2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="wbdv-sf19-qingjing-gong-client-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wbdv-sf19-qingjing-gong-client-angular" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-client" type="462c0819:PsiDirectoryNode" />
+              <item name="wbdv-sf19-qingjing-gong-client-angular2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wbdv-sf19-qingjing-gong-client-angular2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="module-list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wbdv-sf19-qingjing-gong-client-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wbdv-sf19-qingjing-gong-client-angular" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="topic-pills" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wbdv-sf19-qingjing-gong-client-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wbdv-sf19-qingjing-gong-client-angular" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="CourseGrid" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
@@ -131,7 +139,8 @@
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/angular-client/node_modules/tslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/angular-client/node_modules/typescript/lib" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -159,36 +168,42 @@
       <workItem from="1562461378182" duration="15000" />
       <workItem from="1562461812497" duration="5000" />
       <workItem from="1562518278783" duration="304000" />
+      <workItem from="1562682689295" duration="738000" />
+      <workItem from="1562683469269" duration="132000" />
+      <workItem from="1562683662846" duration="22000" />
+      <workItem from="1562683718141" duration="109000" />
+      <workItem from="1562683858440" duration="628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="387000" />
+    <option name="totallyTimeSpent" value="2016000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="822" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="814" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2635659" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="TypeScript" />
+      <window_info id="npm" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32825485" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info active="true" anchor="bottom" id="TypeScript" order="12" visible="true" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -204,7 +219,27 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/angular-client/src/app/topic-pills/topic-pills.component.ts">
+    <entry file="file://$PROJECT_DIR$/angular-client/src/app/topic-pills/topic-pills.component.ts" />
+    <entry file="file://$PROJECT_DIR$/angular-client/src/app/app.routing.ts" />
+    <entry file="file://$PROJECT_DIR$/src/services/CourseServiceClient.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/LessonServiceClient.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/CourseGrid/CourseGrid.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/CourseGrid/CourseGrid.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/CourseGrid/CourseGrid.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -213,13 +248,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-client/src/app/app.routing.ts">
+    <entry file="file://$PROJECT_DIR$/angular.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/CourseGrid/CourseGrid.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>

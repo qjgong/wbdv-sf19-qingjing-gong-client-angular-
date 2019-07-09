@@ -1,14 +1,14 @@
-<div class="list-group">
-  <li class="list-group-item">
-    Courses
-  </li>
-  <li *ngFor="let course of courses"
-      (click)="selectCourse(course)"
-      [ngClass]="{'active':course.id == selectedCourse.id}"
-      class="list-group-item">
-    {{course.title}}
-  </li>
+<div class="cardList" >
+  <tr class="cardListItem col-3" >
+
+    <div class="card-body">
+      <p class="card-text" *ngFor="let course of courses"
+         (click)="selectCourse(course)"
+         [ngClass]="{'active':course.id == selectedCourse.id}">
+        <img class="card-img-top"
+             src="https://picsum.photos/300/200"/>
+        {{course.title}}
+      </p>
+    </div>
+  </tr>
 </div>
-
-
-
