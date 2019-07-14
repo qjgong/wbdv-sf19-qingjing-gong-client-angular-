@@ -10,38 +10,24 @@ import {TopicServiceClient} from '../../services/TopicServiceClient';
 })
 export class TopicPillsComponent implements OnInit {
 
-  constructor(private service: TopicServiceClient, private activatedRoute: ActivatedRoute, private router: Router) {
-    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-  }
+  courseId = 0;
+  moduleId = 0;
+  lessonId = 0;
+  topicId = 0;
+  topics = [];
 
-  courseId;
-  moduleId;
-  lessonId;
-  topics;
-  selectedTopic = {
-    widgets: []
-  };
+  constructor(private topicService: TopicServiceClient, private activatedRoute: ActivatedRoute) {
+  }
 
   ngOnInit() {
-    this.activatedRoute.pathFromRoot[1].params.subscribe(
-      params => {
-        this.courseId = params['courseId'];
-      });
-
-    this.activatedRoute.pathFromRoot[2].params.subscribe(
-      params => {
-        this.moduleId = params['moduleId'];
-      });
-
-    this.activatedRoute.params.subscribe(
-      params => {
-        this.lessonId = params['lessonId'];
-      });
-
-    this.service.findTopicsForLesson(this.lessonId).then(topics => this.topics = topics);
-  }
-
-  selectTopic(topic) {
-    this.selectedTopic = topic;
+    this.activatedRoute.params.subscribe(params => {
+      this.courseId = params.courseId;
+      this.moduleId = params.moduleId;
+      this.lessonId = params.lessonId;
+      this.topicId = params.topicId;
+      if (this.lessonId != null) {
+        this.topicService.findTopicsForLesson(this.lessonId).then(topics => this.topics = topics);
+      }
+    });
   }
 }

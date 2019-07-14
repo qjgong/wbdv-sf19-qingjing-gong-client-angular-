@@ -10,37 +10,23 @@ import {WidgetServiceClient} from '../../services/WidgetServiceClient';
 })
 export class WidgetListComponent implements OnInit {
 
-  constructor(private service: WidgetServiceClient, private activatedRoute: ActivatedRoute, private router: Router) {
-    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-  }
-
-  courseId;
-  moduleId;
-  lessonId;
-  topicId;
   widgets = [];
+  selectedTopicId = 0;
+
+  constructor(private widgetService: WidgetServiceClient,
+              private activatedRoute: ActivatedRoute) {
+  }
 
   ngOnInit() {
-    this.activatedRoute.pathFromRoot[1].params.subscribe(
-      params => {
-        this.courseId = params['courseId'];
-      });
-
-    this.activatedRoute.pathFromRoot[2].params.subscribe(
-      params => {
-        this.moduleId = params['moduleId'];
-      });
-
-    this.activatedRoute.pathFromRoot[3].params.subscribe(
-      params => {
-        this.lessonId = params['lessonId'];
-      });
-    this.activatedRoute.params.subscribe(
-      params => {
-        this.topicId = params['topicId'];
-      });
-    this.service.findWidgetsForTopic(this.topicId).then(widgets => this.widgets = widgets);
+    this.activatedRoute.params.subscribe(params => {
+      this.selectedTopicId = params.topicId;
+      if (this.selectedTopicId != null) {
+        this.widgetService
+          .findWidgetsForTopic(this.selectedTopicId).then(widgets => {
+          this.widgets = widgets;
+        });
+      }
+    });
   }
-
 
 }

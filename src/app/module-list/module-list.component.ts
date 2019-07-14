@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ModuleServiceClient} from '../../services/ModuleServiceClient';
 import {ActivatedRoute, Router} from '@angular/router';
+import {CourseServiceClient} from '../../services/CourseServiceClient';
 
 @Component({
   selector: 'app-module-list',
@@ -10,26 +11,26 @@ import {ActivatedRoute, Router} from '@angular/router';
 export class ModuleListComponent implements OnInit {
 
 
-  constructor(private service: ModuleServiceClient, private activatedRoute: ActivatedRoute, private router: Router) {
-    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+  modules = [];
+  selectedCourseId = 0;
+  selectedModuleId = 0;
+  courseTitle = '';
+
+  constructor(private activatedRoute: ActivatedRoute,
+              private moduleService: ModuleServiceClient,
+              private courseService: CourseServiceClient,
+              private router: Router) {
+    // this.router.routeReuseStrategy.shouldReuseRoute = () => false;
   }
-
-  courseId;
-  modules;
-  selectedModule = {
-    lessons: []
-  };
-
 
   ngOnInit() {
     this.activatedRoute.params.subscribe(
-      params => this.courseId = params['courseId']);
-    this.service.findModulesForCourse(this.courseId).then(modules => this.modules = modules);
-  }
-
-  selectModule(module) {
-    this.selectedModule = module;
-    this.router.navigate(['/course/', this.courseId, 'module', module.id, 'lesson']);
+      params => {
+        this.selectedCourseId = params.courseId;
+        this.selectedModuleId = params.moduleId;
+        this.moduleService.findModulesForCourse(this.selectedCourseId).then(modules => this.modules = modules);
+        this.courseService.findCourseById(this.selectedCourseId).then(course => this.courseTitle = course.title);
+      });
   }
 
 

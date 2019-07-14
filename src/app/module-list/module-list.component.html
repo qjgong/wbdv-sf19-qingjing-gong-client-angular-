@@ -1,19 +1,10 @@
-<div class="row">
-<div class="col-4 left">
-<ul class="list-group">
-
-  <li *ngFor="let module of modules"
-      (click)="selectModule(module)"
-      [ngClass]="{'active':module.id == selectedModule.id}"
-      class="list-group-item">
-    {{module.title}}
+<h1>{{courseTitle}}</h1>
+<ul class="nav flex-column nav-pills bg-primary list-group" >
+  <li class="list-group-item" *ngFor="let module of modules"
+      [ngClass]="{'active': module.id == selectedModuleId}">
+    <a routerLink="/courses/{{selectedCourseId}}/modules/{{module.id}}/lessons">
+      {{module.title}}
+    </a>
   </li>
 </ul>
 
-</div>
-
-  <div class="col-8 right">
-    <router-outlet></router-outlet>
-  </div>
-
-</div>

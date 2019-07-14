@@ -15,6 +15,7 @@ import { ModuleListComponent } from './module-list/module-list.component';
 import { LessonTabsComponent } from './lesson-tabs/lesson-tabs.component';
 import { TopicPillsComponent } from './topic-pills/topic-pills.component';
 import { WidgetListComponent } from './widget-list/widget-list.component';
+import { CourseViewerComponent } from './course-viewer/course-viewer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { WidgetListComponent } from './widget-list/widget-list.component';
     ModuleListComponent,
     LessonTabsComponent,
     TopicPillsComponent,
-    WidgetListComponent
+    WidgetListComponent,
+    CourseViewerComponent
   ],
   imports: [
     routing,

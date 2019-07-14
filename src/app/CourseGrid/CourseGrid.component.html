@@ -1,14 +1,10 @@
-<div class="cardList" >
-  <tr class="cardListItem col-3" >
-
-    <div class="card-body">
-      <p class="card-text" *ngFor="let course of courses"
-         (click)="selectCourse(course)"
-         [ngClass]="{'active':course.id == selectedCourse.id}">
-        <img class="card-img-top"
-             src="https://picsum.photos/300/200"/>
-        {{course.title}}
-      </p>
+<div class="col-sm-10 offset-sm-1">
+  <div class="grid-container">
+    <div class="card" *ngFor="let course of courses">
+      <img class="card-image-top" src="http://picsum.photos/300/200">
+      <div class="card-body">
+        <a routerLink="/courses/{{course.id}}/modules"> <h5 class="card-title">{{course.title}}</h5></a>
+      </div>
     </div>
-  </tr>
+  </div>
 </div>

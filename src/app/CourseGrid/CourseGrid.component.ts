@@ -3,7 +3,8 @@ import {CourseServiceClient} from '../../services/CourseServiceClient';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-course-navigator',
+  // tslint:disable-next-line:component-selector
+  selector: 'app-CourseGrid',
   templateUrl: './CourseGrid.component.html',
   styleUrls: ['./CourseGrid.component.css']
 })
@@ -12,7 +13,7 @@ export class CourseGridComponent implements OnInit {
   constructor(private service: CourseServiceClient, private router: Router) {
   }
 
-  courses;
+  courses = [];
   selectedCourse = {
     modules: []
   };

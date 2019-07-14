@@ -10,30 +10,23 @@ import {LessonServiceClient} from '../../services/LessonServiceClient';
 })
 export class LessonTabsComponent implements OnInit {
 
-  constructor(private service: LessonServiceClient, private activatedRoute: ActivatedRoute, private router: Router) {
-    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-  }
+  selectedCourseId = 0;
+  selectedModuleId = 0;
+  selectedLessonId = 0;
+  lessons = [];
 
-  courseId;
-  moduleId;
-  lessons;
-  selectedLesson = {
-    topics: []
-  };
+  constructor(private activatedRoute: ActivatedRoute,
+              private lessonService: LessonServiceClient) {
+  }
 
   ngOnInit() {
-    this.activatedRoute.parent.params.subscribe(
-      params => {
-        this.courseId = params['courseId'];
-      });
-    this.activatedRoute.params.subscribe(
-      params => {
-        this.moduleId = params['moduleId'];
-      });
-    this.service.findLessonsForModule(this.moduleId).then(lessons => this.lessons = lessons);
-  }
-
-  selectLesson(lesson) {
-    this.selectedLesson = lesson;
+    this.activatedRoute.params.subscribe(params => {
+      this.selectedCourseId = params.courseId;
+      this.selectedModuleId = params.moduleId;
+      this.selectedLessonId = params.lessonId;
+      if (this.selectedModuleId != null) {
+        this.lessonService.findLessonsForModule(this.selectedModuleId).then(lessons => this.lessons = lessons);
+      }
+    });
   }
 }

@@ -1,0 +1,8 @@
+#lessonTab > .nav-link {
+  color: #FFC107;
+}
+
+#lessonTab > .active {
+  background-color: #FFC107;
+  color: black;
+}

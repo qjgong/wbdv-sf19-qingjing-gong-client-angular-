@@ -1,19 +1,11 @@
-<div className="col-8 right bg-light">
-  <li class="nav-item mr-3">
-    <i *ngFor="let topic of topics"
-       (click)="selectTopic(topic)"
-       [ngClass]="{'active':topic.id == selectedTopic.id}"
-       class="nav-item ml-2">
-
-      <a
-        routerLink="/course/{{courseId}}/module/{{moduleId}}/lesson/{{lessonId}}/topic/{{topic.id}}/widget">{{topic.title}}</a>
-    </i>
+<ul class="nav nav-pills">
+  <li class="nav-item" *ngFor="let topic of topics">
+    <a class="nav-link"
+       [ngClass]="{'active': topic.id == topicId}"
+       routerLink="/courses/{{courseId}}/modules/{{moduleId}}/lessons/{{lessonId}}/topics/{{topic.id}}/widgets">
+      {{topic.title}}
+    </a>
   </li>
-
-<div>
-<router-outlet></router-outlet>
-</div>
-</div>
-
+</ul>
 
 

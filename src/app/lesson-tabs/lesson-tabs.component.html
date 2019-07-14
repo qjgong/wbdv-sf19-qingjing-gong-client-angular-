@@ -1,16 +1,12 @@
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <ul class="nav nav-tabs">
-    <li *ngFor="let lesson of lessons"
-
-        (click)="selectLesson(lesson)"
-        [ngClass]="{'active':lesson.id == selectedLesson.id}"
-        class="nav-item ml-5">
-      <a routerLink="/course/{{courseId}}/module/{{moduleId}}/lesson/{{lesson.id}}/topic">{{lesson.title}}</a>
-    </li>
-  </ul>
-
-</nav>
-
-
-<router-outlet></router-outlet>
+<ul class="nav nav-tabs">
+  <li class="nav-item mr-3 d-flex align-items-center"
+      id="lessonTab"
+      *ngFor="let lesson of lessons">
+    <a class="nav-link"
+       [ngClass]="{'active': lesson.id == selectedLessonId}"
+       routerLink="/courses/{{selectedCourseId}}/modules/{{selectedModuleId}}/lessons/{{lesson.id}}/topics">
+      {{lesson.title}}
+    </a>
+  </li>
+</ul>
 
